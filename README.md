@@ -1,1 +1,1 @@
-Laboratorio_Sistemas_Operativos
+# Laboratorio_SO_Avanzados
