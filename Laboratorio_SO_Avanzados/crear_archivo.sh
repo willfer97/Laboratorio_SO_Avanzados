@@ -2,7 +2,7 @@
 
 ARCHIVO=""
 PERMISOS=""
-ABRIR=""
+#ABRIR=""
 
 echo -e "\nEscriba el nombre del archivo\n"
 read ARCHIVO
@@ -11,7 +11,7 @@ if [ -f $ARCHIVO ]
 then
     echo -e "\nEl archivo $ARCHIVO ya existe\n"
 else
-    touch ${ARCHIVO} | echo -e "\nSe ha creado correctamente el archivo $ARCHIVO\n"
+    touch $ARCHIVO | echo -e "\nSe ha creado correctamente el archivo $ARCHIVO\n"
 fi
 
 echo -e "\n¿Desea agregar o quitar permisos al archivo ${ARCHIVO} con CHMOD?\n\nDIGITE LOS PERMISOS EN NUMEROS (777) O LETRAS (+rwx)\n"
